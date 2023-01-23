@@ -6,15 +6,15 @@
     color: #2C444E;
 }
 body {
-    margin: 0;
+    margin: 0 10%;
 }
-h2 {
-    font-size: 300%;
-    margin: 0;
-    color: #2C444E;
-}
+/*Topbar*/
 .topbar {
-    padding: 0 10%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +42,10 @@ a.logo, h1 {
 .navbar a:hover {
     border-top: 4px solid #00BEA4;
 }
+/*Link-botão*/
 a.btn {
-    padding: 6px 3px;
+    display: inline-block;
+    padding: 10px 6px;
     border-radius: 5px;
     border: 0;
     color: white;
@@ -54,27 +56,59 @@ a.btn:hover {
     background-color: #00DFC2;
 }
 a.btn2 {
-    font-size: larger;
+    text-transform: uppercase;
     padding: 12px 10px;
 }
+/*Header*/
 header {
     display: flex;
-    margin: 5% 10%;
+    margin-top: 5%;
 }
 .wellcome {
     margin-right: 5%;
     display: block;
     padding-top: 10%;
-    flex: 35%;
+    flex: 45%;
+}
+.wellcome h2 {
+    font-size: 300%;
+    margin: 0;
+    color: #2C444E;
 }
 .wellcome-img {
-    max-height: 500px;
     max-width: 40%;
-    flex: 40%;
+    flex: 50%;
 }
 .spacingtxt {
     font-weight: bold;
     letter-spacing: 5px;
     margin: 0;
     color: #2C444E;
+}
+/*Section*/
+section {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+}
+section h2 {
+    flex: 100%;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: lobster, cursive;
+}
+.servicos {
+    margin: 5% 10%;
+    display: flex;
+}
+.card {
+
+    border: 1px solid #00BEA4;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 2% 2%;
+    padding: 1%;
+
 }
