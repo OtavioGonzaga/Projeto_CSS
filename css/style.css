@@ -3,31 +3,30 @@
     box-sizing: border-box;
     font-family: roboto, sans-serif;
     text-decoration: none;
+    color: #2C444E;
 }
 body {
     margin: 0;
-    background: #000000;
+}
+h2 {
+    font-size: 300%;
+    margin: 0;
+    color: #2C444E;
 }
 .topbar {
-    width: 100%;
+    padding: 0 10%;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    margin-left: 10%;
+a.logo, h1 {
     flex: 25%;
     text-align: left;
-}
-.logo a {
     font-family: lobster, cursive;
-    color: #00b300;
 }
 .navbar {
     align-items: baseline;
     display: flex;
-    margin-right: 10%;
     flex: 55%;
     text-align: right;
     justify-content: flex-end;
@@ -35,23 +34,47 @@ body {
 .navbar a {
     text-transform: capitalize;
     border-top: 4px solid transparent;
-    color: white;
     padding: 5px 12px;
     text-decoration: none;
     font-size: 120%;
-    margin-left: 4%;
+    margin-left: 2%;
 }
 .navbar a:hover {
-    border-top: 4px solid #00b300;
+    border-top: 4px solid #00BEA4;
 }
 a.btn {
     padding: 6px 3px;
     border-radius: 5px;
     border: 0;
     color: white;
-    background-color: #00b300;
+    background-color: #00BEA4;
 }
 a.btn:hover {
     border: 0;
-    background-color: #00ff00;
+    background-color: #00DFC2;
+}
+a.btn2 {
+    font-size: larger;
+    padding: 12px 10px;
+}
+header {
+    display: flex;
+    margin: 5% 10%;
+}
+.wellcome {
+    margin-right: 5%;
+    display: block;
+    padding-top: 10%;
+    flex: 35%;
+}
+.wellcome-img {
+    max-height: 500px;
+    max-width: 40%;
+    flex: 40%;
+}
+.spacingtxt {
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0;
+    color: #2C444E;
 }
