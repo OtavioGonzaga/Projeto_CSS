@@ -100,15 +100,22 @@ section h2 {
     font-family: lobster, cursive;
 }
 .servicos {
-    margin: 5% 10%;
+    margin: 5% 0;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .card {
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 30%;
     border: 1px solid #00BEA4;
     border-radius: 5px;
-    justify-content: space-around;
-    margin: 2% 2%;
     padding: 1%;
-
+    text-align: center;
+}
+.card img {
+    margin: 10% 40%;
+    width: 20%;
 }
