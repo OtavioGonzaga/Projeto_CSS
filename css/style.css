@@ -7,7 +7,7 @@
     color: #2C444E;
 }
 body {
-    margin: 0 10%;
+    padding: 0 10%;
 }
 /*Topbar*/
 .topbar {
@@ -59,6 +59,9 @@ a.btn:hover {
 a.btn2 {
     text-transform: uppercase;
     padding: 12px 10px;
+}
+.tr {
+    transition: .5s;
 }
 /*Header*/
 header {
@@ -116,27 +119,60 @@ section h2 {
     border-radius: 5px;
     text-align: center;
     overflow: hidden;
+    transition: 1s;
 }
-.card p {
+.card p, .card h3 {
     padding: 0 4%;
     text-align: justify;
+    transition: .8s;
 }
 .card img {
     margin: 0 40%;
     width: 20%;
 }
+.card:hover img {
+    border-radius: 100%;
+    background-color: white;
+}
 .card:hover {
+    background-color: #00BEA4;
     animation: open .3s ease-in both;
 }
 @keyframes open {
     99% {
-        height: 415px;
+        height: 385px;
     }
     100% {
         padding-top: 2%;
         height: auto;
     }
 }
+.card:hover p, .card:hover h3 {
+    color: white;
+}
 .card:hover i.bi {
     display: none;
+}
+/*footer*/
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to bottom, #00DFC2, #00BEA4);
+    display: none;
+}
+footer h2 {
+    margin: 0;
+}
+/*whatsapp*/
+#whatsapp {
+    position: fixed;
+    bottom: 0;
+    color: white ;
+    padding: 20px;
+    border-radius: 100%;
+    margin: 10px;
+    right: 0%;
+    background-color: 	#25D366;
+    font-size: 30px;
 }
