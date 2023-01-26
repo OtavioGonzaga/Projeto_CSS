@@ -60,12 +60,8 @@ a.btn2 {
     text-transform: uppercase;
     padding: 12px 10px;
 }
-.tr {
-    transition: .5s;
-}
 /*Header*/
 header {
-    display: flex;
     margin-top: 5%;
 }
 .wellcome {
@@ -98,7 +94,6 @@ section {
 section h2 {
     flex: 100%;
     font-size: xx-large;
-    text-align: center;
     margin: 0;
     padding: 0;
     font-family: lobster, cursive;
@@ -113,7 +108,7 @@ section h2 {
 }
 .card {
     display: flex;
-    height: 320px;
+    height: 370px;
     flex-flow: column wrap;
     justify-content: center;
     width: 30%;
@@ -129,7 +124,7 @@ section h2 {
     transition: .8s;
 }
 .card img {
-    padding: 0 40%;
+    padding: 2% 40%;
     width: 100%;
     transition: .8s;
 }
@@ -198,4 +193,20 @@ footer p {
     right: 0%;
     background-color: 	#25D366;
     font-size: 30px;
+}
+/*Classes reutilizáveis*/
+.tr {
+    transition: .5s;
+}
+.flex {
+    display: flex !important;
+}
+.text-center {
+    text-align: center;
+}
+.one {
+    font-size: 250%;
+    font-family: lobster, cursive;
+    padding: 0 25%;
+    width: 100%;
 }
