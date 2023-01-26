@@ -22,8 +22,8 @@ body {
 }
 a.logo, h1 {
     flex: 25%;
-    text-align: left;
     font-family: lobster, cursive;
+    letter-spacing: 2px;
 }
 .navbar {
     align-items: baseline;
@@ -91,7 +91,7 @@ header {
 }
 /*Section*/
 section {
-    margin-top: 100px;
+    margin: 100px 0;
     display: flex;
     flex-flow: row wrap;
 }
@@ -108,6 +108,8 @@ section h2 {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    height: 400px;
+    overflow: auto;
 }
 .card {
     display: flex;
@@ -127,10 +129,14 @@ section h2 {
     transition: .8s;
 }
 .card img {
-    margin: 0 40%;
-    width: 20%;
+    padding: 0 40%;
+    width: 100%;
+    transition: .8s;
 }
 .card:hover img {
+    width: 20%;
+    margin: 0 40%;
+    padding: .5%;
     border-radius: 100%;
     background-color: white;
 }
@@ -140,7 +146,7 @@ section h2 {
 }
 @keyframes open {
     99% {
-        height: 385px;
+        height: 380px;
     }
     100% {
         padding-top: 2%;
@@ -155,14 +161,31 @@ section h2 {
 }
 /*footer*/
 footer {
+    border-top: 10px solid #00DFC2;
     width: 100%;
+    display: block;
+    text-align: center;
     position: absolute;
     left: 0;
-    background-image: linear-gradient(to bottom, #00DFC2, #00BEA4);
-    display: none;
+    background-image: linear-gradient(to bottom, #00BEA4, #2C444E, black);
 }
 footer h2 {
+    margin: 3% 0 0 0;
+    padding: 0;
+    color: white;
+    font-family: lobster, cursive;
+    font-size: 190%;
+    letter-spacing: 2px;
+}
+p.copy {
+    padding: 0;
+    margin: 4% 0 1% 0;
+    font-weight: bold;
+}
+footer p {
+    padding: 0;
     margin: 0;
+    color: white;
 }
 /*whatsapp*/
 #whatsapp {
