@@ -1,0 +1,14 @@
+@media screen and (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    #menures {
+        display: flex;
+        font-size: 40px;
+    }
+    .navbar {
+        display: none;
+    }
+}

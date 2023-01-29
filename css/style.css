@@ -8,6 +8,7 @@
 }
 body {
     padding: 0 10%;
+    margin: 8px;
 }
 /*Topbar*/
 .topbar {
@@ -42,6 +43,13 @@ a.logo, h1 {
 }
 .navbar a:hover {
     border-top: 4px solid #00BEA4;
+}
+#menures {
+    display: none;
+}
+#menures:hover {
+    border: 3px solid #2C444E;
+    border-radius: 5px;
 }
 /*Link-botão*/
 a.btn {
@@ -103,15 +111,15 @@ section h2 {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 400px;
+    height: auto;
     overflow: auto;
 }
 .card {
     display: flex;
-    height: 370px;
     flex-flow: column wrap;
     justify-content: center;
     width: 30%;
+    height: auto;
     border: 1px solid #00BEA4;
     border-radius: 5px;
     text-align: center;
@@ -121,38 +129,38 @@ section h2 {
 .card p, .card h3 {
     padding: 0 4%;
     text-align: justify;
-    transition: .8s;
+    color: #2C444E;
 }
 .card img {
+    margin-top: 20px;
     padding: 2% 40%;
     width: 100%;
     transition: .8s;
 }
 .card:hover img {
     width: 20%;
-    margin: 0 40%;
+    margin: 20px 40%;
     padding: .5%;
     border-radius: 100%;
     background-color: white;
 }
 .card:hover {
     background-color: #00BEA4;
-    animation: open .3s ease-in both;
-}
-@keyframes open {
-    99% {
-        height: 380px;
-    }
-    100% {
-        padding-top: 2%;
-        height: auto;
-    }
+    display: block;
+    overflow: visible;
 }
 .card:hover p, .card:hover h3 {
     color: white;
 }
 .card:hover i.bi {
     display: none;
+}
+p.hidden {
+    color: #2C444E;
+    display: none;
+}
+.card:hover p.hidden {
+    display: flex;
 }
 /*footer*/
 footer {
@@ -209,4 +217,16 @@ footer p {
     font-family: lobster, cursive;
     padding: 0 25%;
     width: 100%;
+}
+/*Contato*/
+.contact {
+    width: 50%;
+}
+form.contact label, form.contact input {
+    display: block;
+    margin: 5% 0;
+
+}
+textarea {
+    resize: none;
 }
