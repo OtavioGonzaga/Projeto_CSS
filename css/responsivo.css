@@ -4,11 +4,13 @@
     }
 }
 @media screen and (max-width: 750px) {
-    #menures {
-        display: flex;
-        font-size: 40px;
-    }
     .navbar {
         display: none;
     }
+    #menures {
+        border: 3px solid white;
+        display: flex;
+        font-size: 40px;
+    }
+
 }
