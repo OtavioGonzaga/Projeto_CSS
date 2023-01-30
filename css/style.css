@@ -10,6 +10,9 @@ body {
     padding: 0 10%;
     margin: 8px;
 }
+hr {
+    margin: 0;
+}
 /*Topbar*/
 .topbar {
     background-color: white;
@@ -54,7 +57,7 @@ a.logo, h1 {
     background-color: white;
     width: 200px;
     border-radius: 10px;
-    border: 3px solid #2C444E;
+    border: 1px solid #2C444E;
 }
 #navres a {
     text-transform: capitalize;
@@ -65,7 +68,7 @@ a.logo, h1 {
     background-color: #2c444e6f;
 }
 #menures:hover {
-    border: 3px solid #2C444E;
+    border: 2px solid #2C444E;
     background-color: #2c444e6f;
     border-radius: 5px;
 }
@@ -95,12 +98,12 @@ a.btn2 {
 /*Header*/
 header {
     margin-top: 5%;
+    overflow: auto;
 }
 .wellcome {
     margin-right: 5%;
     display: block;
     padding-top: 10%;
-    flex: 45%;
 }
 .wellcome h2 {
     font-size: 300%;
@@ -109,7 +112,6 @@ header {
 }
 .wellcome-img {
     max-width: 40%;
-    flex: 50%;
 }
 .spacingtxt {
     font-weight: bold;

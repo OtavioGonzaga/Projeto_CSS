@@ -8,9 +8,35 @@
         display: none;
     }
     #menures {
-        border: 3px solid white;
+        border: 2px solid white;
         display: flex;
         font-size: 40px;
+        padding: 0 3px;
     }
 
+}
+@media screen and (max-width: 650px) {
+    .topbar {
+        z-index: 2;
+    }
+    header {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+    }
+    .wellcome {
+        width: 90%;
+        margin: 5% 0;
+        z-index: 1;
+        position: absolute;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-c-olor: white;
+    }
+    .wellcome-img {
+        position: absolute;
+        margin-top: 5%;
+        max-width: 350px;
+        opacity: 50%;
+    }
 }
