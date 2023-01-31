@@ -14,8 +14,11 @@
         padding: 0 3px;
     }
     .servicos {
-        height: 500px;
+        height: 600px;
         margin-bottom: 50px;
+    }
+    .card {
+        height: 450px;
     }
     .card:hover {
         height: auto;
