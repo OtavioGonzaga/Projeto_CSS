@@ -13,7 +13,12 @@
         font-size: 40px;
         padding: 0 3px;
     }
-
+    .servicos {
+        height: 100vh;
+    }
+    .card:hover {
+        height: 90vh;
+    }
 }
 @media screen and (max-width: 650px) {
     header {
@@ -35,5 +40,25 @@
         margin-top: 5%;
         max-width: 350px;
         opacity: 50%;
+    }
+    .servicos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .card {
+        height: auto;
+        width: 70%;
+        margin: 10px 0;
+    }
+    .card:hover {
+        height: 80vh;
+    }
+}
+@media screen and (max-width: 410px) {
+    footer {
+        z-index: 1;
     }
 }
