@@ -6,9 +6,13 @@
     text-decoration: none;
     color: #2C444E;
 }
+html {
+    width: 100% !important;
+}
 body {
     padding: 0 10%;
-    margin: 8px;
+    width: 100%;
+    margin: 0;
 }
 hr {
     margin: 0;
@@ -16,16 +20,18 @@ hr {
 /*Topbar*/
 .topbar {
     background-color: white;
+    z-index: 3;
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 0;
+    padding: 2% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 a.logo, h1 {
-    flex: 25%;
+    padding: 0;
+    margin: 0;
     font-family: lobster, cursive;
     letter-spacing: 2px;
 }
@@ -55,7 +61,7 @@ a.logo, h1 {
     font-size: 25px;
     text-align: end;
     background-color: white;
-    width: 200px;
+    width: 170px;
     border-radius: 10px;
     border: 1px solid #2C444E;
 }
@@ -121,23 +127,25 @@ header {
 }
 /*Section*/
 section {
-    margin: 100px 0;
+    margin-top: 50px;
     display: flex;
     flex-flow: row wrap;
 }
 section h2 {
     flex: 100%;
+    z-index: 2;
     font-size: xx-large;
     margin: 0;
     padding: 0;
     font-family: lobster, cursive;
 }
 .servicos {
-    margin: 5% 0;
+    margin-top: 5%;
+    transition: 1s;
+    height: 90vh;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 75vh;
     overflow: auto;
 }
 .card {
@@ -158,21 +166,20 @@ section h2 {
     color: #2C444E;
 }
 .card img {
-    margin-top: 20px;
     padding: 2% 40%;
     width: 100%;
     transition: .8s;
 }
 .card:hover img {
-    width: 20%;
-    margin: 20px 40%;
+    width: 40%;
+    margin: 2vh 30%;
     padding: .5%;
     border-radius: 100%;
     background-color: white;
 }
 .card:hover {
     background-color: #00BEA4;
-    height: 75vh;
+    height: 80vh;
 }
 .card:hover p, .card:hover h3 {
     color: white;
@@ -189,6 +196,7 @@ p.hidden {
 }
 /*footer*/
 footer {
+    z-index: 1;
     border-top: 10px solid #00DFC2;
     width: 100%;
     display: block;
