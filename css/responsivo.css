@@ -14,10 +14,11 @@
         padding: 0 3px;
     }
     .servicos {
-        height: 100vh;
+        height: 500px;
+        margin-bottom: 50px;
     }
     .card:hover {
-        height: 90vh;
+        height: auto;
     }
 }
 @media screen and (max-width: 650px) {
