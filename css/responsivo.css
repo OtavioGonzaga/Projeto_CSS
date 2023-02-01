@@ -58,7 +58,7 @@
         margin: 10px 0;
     }
     .card:hover {
-        height: 80vh;
+        height: auto;
     }
 }
 @media screen and (max-width: 410px) {
