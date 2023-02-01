@@ -7,9 +7,12 @@
     color: #2C444E;
 }
 html {
-    width: 100% !important;
+    width: 100%;
+    height: auto;
 }
 body {
+    height: auto;
+    overflow: auto;
     padding: 0 10%;
     width: 100%;
     margin: 0;
@@ -141,9 +144,9 @@ section h2 {
     font-family: lobster, cursive;
 }
 .servicos {
-    margin-top: 5%;
+    margin: 5% 0;
     transition: 1s;
-    height: 90vh;
+    height: auto;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -154,7 +157,7 @@ section h2 {
     flex-flow: column wrap;
     justify-content: center;
     width: 30%;
-    height: 60vh;
+    height: 10cm;
     border: 1px solid #00BEA4;
     border-radius: 5px;
     text-align: center;
@@ -180,7 +183,7 @@ section h2 {
 }
 .card:hover {
     background-color: #00BEA4;
-    height: 80vh;
+    height: 15cm;
 }
 .card:hover p, .card:hover h3 {
     color: white;

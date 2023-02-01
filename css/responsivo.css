@@ -18,7 +18,7 @@
         margin-bottom: 50px;
     }
     .card {
-        height: 450px;
+        height: 10cm;
     }
     .card:hover {
         height: auto;
@@ -64,5 +64,6 @@
 @media screen and (max-width: 410px) {
     footer {
         z-index: 1;
+        
     }
 }
